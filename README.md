@@ -1,1 +1,3 @@
-# Minkowski_Dimension_Moles
+#### This code is used for calculating the Minkowski (Hausdorff) dimension of a mole. The hausDim.m file is written by Alceu Ferraz Costa. The code returns the Haussdorf fractal dimension D of an object represented by the binary image I. Nonzero pixels belong to an object and 0 pixels constitute the background.. The ImgProcessing.m file is custom made for the purpose of writting a paper for the ETAI 2024 conference. The purpose of the paper is to analyze different moles and determine whether they are malignant or benign based on their Minkowski (Hausdorff) dimension. The algorithm is used on two different types of binary images: one containing the whole mole, the other containing only the boundary.
+
+#### Link to the original code from Alceu Ferraz Costa: https://www.mathworks.com/matlabcentral/fileexchange/30329-hausdorff-box-counting-fractal-dimension
