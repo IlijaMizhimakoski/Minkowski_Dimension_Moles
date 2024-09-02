@@ -10,13 +10,11 @@ figure(2); imshow(img_binary, [])
 img_inv_bin = not(img_binary);
 figure(3); imshow(img_inv_bin, [])
 
-
 %% find boundaries
 [B, L] = bwboundaries(img_inv_bin, 'noholes');
 
 % Create a blank image to draw boundaries
 boundary_image = false(size(img_inv_bin));
-
 
 % Loop through each boundary and draw in the blank image
 for k = 1:length(B)
@@ -37,12 +35,12 @@ end
 
 hold off;
 
-
 %% algorithm whole
 D = hausDim(img_inv_bin)
 
 %% algorithm boundary
 D_boundary = hausDim(boundary_image)
+
 %% compute T lumination
 gray = rgb2gray(img);
 figure(5); imshow(gray, [])
