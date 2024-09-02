@@ -1,9 +1,9 @@
 %% read image
-img = imread('Maligna35.jpg');
+img = imread('name.jpg');
 figure(1); imshow(img, [])
 
 %% convert to binary
-img_binary = im2bw(img, 0.55); % menuvaj vrednost od 0 do 1 za luminacija
+img_binary = im2bw(img, 0.55); 
 figure(2); imshow(img_binary, [])
 
 %% invert binary
