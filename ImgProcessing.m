@@ -38,15 +38,12 @@ end
 hold off;
 
 
-%% algo
+%% algorithm whole
 D = hausDim(img_inv_bin)
 
-%%
+%% algorithm boundary
 D_boundary = hausDim(boundary_image)
 %% compute T lumination
 gray = rgb2gray(img);
 figure(5); imshow(gray, [])
-
-% so ovaa funkcija otprilika se presmetuva vrednosta na luminacija t.e
-% globalen threshold (vidi dokumentacija za povekje)
 T = graythresh(gray)
